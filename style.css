@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Martel Sans';
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url(assets/images/bgimg.jpg);
+    height: 600px;
+    position: relative;
+    
+} 
+.main .box{
+   height: 600px; 
+   width: 100%;
+   opacity : 0.45;
+   background-color: black;
+   position: absolute;
+   top: 0;
+}
+nav{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   max-width: 80vw;
+   margin: auto;
+   height: 93px;
+   
+   
+}
+nav img {
+    width: 165px;
+    position: relative;
+    z-index: 1;
+}
+nav button{
+    position: relative;
+    z-index: 1;
+}
+.hero{
+    height: 70%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: 'Martel Sans';
+    gap: 23px;
+    padding: 30px;
+    
+}
+ 
+.bold{
+    font-size: 56px;
+    font-weight: 900;
+    text-align: center;
+}
+.light{
+    font-size: 20px;
+    font-weight: 500;
+    
+    text-align: center;
+}
+.lighter{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+.seperation{
+    height: 5px;
+    background-color: rgb(112, 109, 109);
+    width: 100%;
+
+}
+.btn{
+    padding: 6px 30px;
+    background-color: rgb(0 0 0 / 54%);
+    font-size: medium;
+    border-style: none;
+    border-radius: 4px;
+    border: 0.1px rgba(255, 255, 255, 0.331) solid;
+    color: rgb(255, 246, 246);
+    margin: 4px;
+    cursor: pointer;
+}
+.redbtn{
+    padding: 6px 10px;
+    background-color: rgb(247, 25, 25);
+    font-size: medium;
+    border-style: none;
+    border-radius: 4px;
+    margin: 4px;
+    color: rgb(255, 246, 246);
+    cursor: pointer;
+}
+.redbtn2{
+    padding: 10px 25px;
+    background-color: rgb(247, 25, 25);
+    font-size: large;
+    border-style: none;
+    border-radius: 4px;
+    margin: 4px;
+    color: rgb(255, 246, 246);
+    font-weight: bolder;
+    cursor: pointer;
+}
+.email{
+    padding: 14px 170px;
+    background-color: rgb(0 0 0 / 54%);
+    font-size: small;
+    border-style: none;
+    border-radius: 4px;
+    border: 0.1px rgba(255, 255, 255, 0.502) solid;
+    color: rgb(255, 255, 255);
+    margin: 4px;
+    padding-left: 15px;
+}
+.first{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 70vw ;
+    margin: auto;
+}
+.secImg img{
+    width: 555px;
+position: relative;
+    z-index: 10;
+}
+.secImg video{
+    width: 476px;
+    position: absolute;
+    right: 13px;
+    top: 51px;
+}
+.secImg{
+   position: relative;
+  
+}
+.blabla{
+display: flex;
+flex-direction: column;
+padding: 3px;
+}
+.blabla>:nth-child(1){
+    font-size: 43px;
+    font-weight: 900;
+}
+.blabla>:nth-child(2){
+    font-size: 16px;
+    font-weight: 400;
+}
+.faq{
+    color: white;
+    padding: 32px;
+}
+.faq h2{
+    text-align: center;
+    font-size: 42px;
+
+}
+.faqbox{
+    color: white;
+    background-color: rgba(109, 105, 105, 0.548);
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 20px;
+    
+}
+.faqbox:hover{
+    background-color: rgba(255, 255, 255, 0.473);
+    transition: all 0.5s ease-in;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 70vw;
+    margin: auto;
+    gap: 34px;
+}
+@media screen and (max-width : 1200px){
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 70vw;
+        margin: auto;
+        gap: 20px;
+    }
+}
+.footer_items{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+.footer a{
+    color: rgba(255, 255, 255, 0.7);
+}
+footer{
+    color: white;
+    max-width: 70vw;
+    margin: auto;
+    padding : 14px;
+    
+}
+.ques{
+   padding: 34px 0px;
+}
+@media screen and (max-width : 1200px){
+    .first{
+        flex-wrap: wrap;
+      
+    }
+    .secImg video {
+        width: 286px;
+        padding: 10px;
+    }
+    .secImg img{
+        width: 342px;
+        padding: 10px;
+    }
+    .blabla{
+        padding: 40px;
+    }
+  
+    
+    
+}
+@media screen and (max-width : 700px){
+    .bold{
+        font-size: 32px;
+    }
+    .light{
+        font-size: 15px;
+    }
+    .lighter{
+        font-size: 10px;
+    }
+    nav span img {
+        width: 100px;
+        padding: 10px;
+    }
+   
+    .btn{
+        font-size: 8px;
+    }
+    .redbtn{
+        font-size: 8px;
+    }
+    .email{
+        padding : 3px;
+
+    }
+    .redbtn2{
+        padding: 7px;
+    }
+   
+}
